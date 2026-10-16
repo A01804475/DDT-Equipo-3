@@ -1,0 +1,600 @@
+/* =========================================================
+   LANDING PAGE - PROYECTO DE QUÍMICA (DDT / PLAGUICIDAS)
+   Colores usados:
+   Azul oscuro: #1B1F3B   Morado: #6C4DFF   Verde agua: #00BFA6
+   Amarillo: #FFC93C      Rosa: #FF6B9A      Fondo claro: #F5F7FF
+   ========================================================= */
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html, body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #1B1F3B;
+    background-color: #F5F7FF;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+ 
+a{
+    color: #1B1F3B;
+    text-decoration: none;
+}
+ 
+/* ---------- Títulos ---------- */
+.titulos{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.6em;
+    color: #1B1F3B;
+}
+ 
+.titulos::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 6px;
+    margin: 12px auto 0px;
+    border-radius: 10px;
+    background-color: #FFC93C;
+}
+ 
+.subtitulo{
+    text-align: center;
+    font-size: 1.1em;
+    color: #5b6080;
+    padding: 15px 0px 35px;
+}
+ 
+/* ---------- Menú ---------- */
+nav{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0px 4px 20px rgba(27, 31, 59, 0.12);
+}
+ 
+.navega{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+ 
+nav li{
+    font-weight: 600;
+    margin: 0px 4px;
+}
+ 
+nav a{
+    display: block;
+    padding: 10px 20px;
+    color: #1B1F3B;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+}
+ 
+nav a:hover{
+    background-color: #6C4DFF;
+    color: white;
+}
+ 
+nav a:active{
+    background-color: #1B1F3B;
+}
+ 
+nav i{
+    padding-right: 8px;
+}
+ 
+.menupeque{
+    display: none;
+}
+ 
+/* ---------- Portada (Inicio) ---------- */
+.hero{
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    text-align: center;
+    padding: 160px 20px 120px;
+    color: white;
+    background: linear-gradient(135deg, #6C4DFF 0%, #8E5BFF 45%, #00BFA6 100%);
+    border-radius: 0px 0px 80px 80px;
+}
+ 
+.hero-contenido{
+    position: relative;
+    z-index: 2;
+}
+ 
+.hero h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 9em;
+    line-height: 1;
+    color: white;
+    text-shadow: 6px 6px 0px #1B1F3B;
+}
+ 
+.hero h2{
+    font-weight: 600;
+    font-size: 2em;
+    color: #FFC93C;
+    padding-top: 10px;
+}
+ 
+.hero p{
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 20px auto 35px;
+}
+ 
+.circulo{
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+ 
+.c1{
+    width: 350px;
+    height: 350px;
+    background-color: #FFC93C;
+    top: -100px;
+    right: -80px;
+}
+ 
+.c2{
+    width: 220px;
+    height: 220px;
+    background-color: #FF6B9A;
+    bottom: 40px;
+    left: -60px;
+}
+ 
+.c3{
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 30%;
+    left: 12%;
+}
+ 
+.boton{
+    display: inline-block;
+    padding: 14px 38px;
+    margin: 6px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.3s;
+}
+ 
+.boton-1{
+    background-color: #FFC93C;
+    color: #1B1F3B;
+    box-shadow: 0px 6px 0px #1B1F3B;
+}
+ 
+.boton-1:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 9px 0px #1B1F3B;
+}
+ 
+.boton-2{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+}
+ 
+.boton-2:hover{
+    background-color: white;
+    color: #6C4DFF;
+}
+ 
+/* ---------- Columnas ---------- */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+ 
+.col-1 {width: 8.33%; float: left; padding: 15px;}
+.col-2 {width: 16.66%; float: left; padding: 15px;}
+.col-3 {width: 25%; float: left; padding: 15px;}
+.col-4 {width: 33.33%; float: left; padding: 15px;}
+.col-5 {width: 41.66%; float: left; padding: 15px;}
+.col-6 {width: 50%; float: left; padding: 15px;}
+.col-7 {width: 58.33%; float: left; padding: 15px;}
+.col-8 {width: 66.66%; float: left; padding: 15px;}
+.col-9 {width: 75%; float: left; padding: 15px;}
+.col-10 {width: 83.33%; float: left; padding: 15px;}
+.col-11 {width: 91.66%; float: left; padding: 15px;}
+.col-12 {width: 100%; float: left; padding: 15px;}
+ 
+/* ---------- Información ---------- */
+.informacion{
+    padding: 90px 50px 50px;
+    text-align: center;
+}
+ 
+.texto{
+    text-align: left;
+    padding-top: 20px;
+}
+ 
+.texto h3{
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+ 
+.texto p{
+    font-size: 1.1em;
+    color: #3d4263;
+    margin-bottom: 15px;
+}
+ 
+.molecula{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 12px;
+    box-shadow: 0px 12px 35px rgba(108, 77, 255, 0.25);
+}
+ 
+.molecula iframe{
+    width: 100%;
+    height: 380px;
+    border: none;
+    border-radius: 18px;
+}
+ 
+/* ---------- Tarjetas ---------- */
+.tarjetas{
+    padding: 30px 50px 90px;
+    text-align: center;
+}
+ 
+.tarjeta{
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px 25px;
+    box-shadow: 0px 10px 30px rgba(108, 77, 255, 0.15);
+    transition-duration: 0.4s;
+}
+ 
+.tarjeta:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 18px 40px rgba(108, 77, 255, 0.3);
+}
+ 
+.icono{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 2.2em;
+    line-height: 85px;
+}
+ 
+.morado{background-color: #6C4DFF;}
+.verde{background-color: #00BFA6;}
+.rosa{background-color: #FF6B9A;}
+.amarillo{background-color: #FFC93C;}
+ 
+.tarjeta h3{
+    font-weight: 800;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+ 
+.tarjeta p{
+    color: #5b6080;
+}
+ 
+/* ---------- Galería ---------- */
+.galeria{
+    background-color: #1B1F3B;
+    padding: 90px 50px;
+    text-align: center;
+    border-radius: 80px;
+}
+ 
+.galeria .titulos{
+    color: white;
+}
+ 
+.galeria .subtitulo{
+    color: #c9ccf0;
+}
+ 
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 4px;
+}
+ 
+.columna{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 8px;
+}
+ 
+/* Cada recuadro de la galería. Para poner una foto real,
+   cambia el <div class="foto"> por <img src="img/foto.jpg"> */
+.foto{
+    margin-top: 16px;
+    border-radius: 20px;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 60px;
+    transition-duration: 0.4s;
+}
+ 
+.foto:hover{
+    transform: scale(1.04);
+}
+ 
+.alta{height: 280px;}
+.baja{height: 190px;}
+ 
+.columna img{
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 20px;
+    vertical-align: middle;
+    transition-duration: 0.4s;
+}
+ 
+.columna img:hover{
+    transform: scale(1.04);
+}
+ 
+/* ---------- Contacto ---------- */
+.contacto{
+    padding: 100px 50px 70px;
+}
+ 
+.formulario{
+    background-color: white;
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: 0px 12px 35px rgba(108, 77, 255, 0.2);
+}
+ 
+.formulario h3{
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+ 
+form{
+    display: flex;
+    flex-direction: column;
+}
+ 
+label{
+    font-weight: 600;
+    margin-top: 12px;
+}
+ 
+input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 13px;
+    margin-top: 6px;
+    border: 2px solid #dcdffa;
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    background-color: #F5F7FF;
+}
+ 
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 13px;
+    margin-top: 6px;
+    border: 2px solid #dcdffa;
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    background-color: #F5F7FF;
+}
+ 
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    outline: none;
+    border-color: #6C4DFF;
+    background-color: white;
+}
+ 
+button[type="submit"]{
+    margin-top: 22px;
+    background-color: #6C4DFF;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+ 
+button[type="submit"]:hover{
+    background-color: #00BFA6;
+    transform: translateY(-3px);
+}
+ 
+button[type="submit"]:active{
+    transform: translateY(1px);
+}
+ 
+.redes{
+    text-align: center;
+    padding-top: 40px;
+}
+ 
+.redes h3{
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+ 
+.redes a{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    border-radius: 50%;
+    background-color: #1B1F3B;
+    color: white;
+    font-size: 2em;
+    line-height: 70px;
+    transition-duration: 0.3s;
+}
+ 
+.redes a:hover{
+    background-color: #FFC93C;
+    color: #1B1F3B;
+    transform: translateY(-6px);
+}
+ 
+/* ---------- Pie de página ---------- */
+footer{
+    background-color: #1B1F3B;
+    color: white;
+    text-align: center;
+    padding: 50px 50px 30px;
+    border-radius: 80px 80px 0px 0px;
+}
+ 
+footer h2{
+    font-weight: 800;
+    font-size: 1.6em;
+    color: #FFC93C;
+    margin-bottom: 15px;
+}
+ 
+footer ul{
+    list-style-type: none;
+}
+ 
+footer li{
+    padding: 4px 0px;
+    color: #c9ccf0;
+}
+ 
+footer p{
+    font-size: 1em;
+    color: #c9ccf0;
+    padding-top: 20px;
+}
+ 
+/* ---------- Pantallas medianas ---------- */
+@media (max-width: 800px){
+    .columna{
+        flex: 50%;
+        max-width: 50%;
+    }
+ 
+    .hero h1{
+        font-size: 6em;
+    }
+ 
+    .col-4{
+        width: 100%;
+    }
+ 
+    .col-6{
+        width: 100%;
+    }
+}
+ 
+/* ---------- Celular ---------- */
+@media (max-width: 600px){
+    [class*="col-"]{
+        width: 100%;
+    }
+ 
+    .columna{
+        flex: 100%;
+        max-width: 100%;
+    }
+ 
+    .hero{
+        border-radius: 0px 0px 40px 40px;
+        padding-top: 130px;
+    }
+ 
+    .hero h1{
+        font-size: 4.5em;
+        text-shadow: 4px 4px 0px #1B1F3B;
+    }
+ 
+    .hero h2{
+        font-size: 1.4em;
+    }
+ 
+    .titulos{
+        font-size: 2em;
+    }
+ 
+    .informacion, .tarjetas, .galeria, .contacto{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ 
+    .galeria{
+        border-radius: 40px;
+    }
+ 
+    footer{
+        border-radius: 40px 40px 0px 0px;
+    }
+ 
+    .menupeque{
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.2em;
+        cursor: pointer;
+        width: 100%;
+    }
+ 
+    .menupeque a{
+        display: block;
+        padding: 6px;
+    }
+ 
+    .navega{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0px 10px 20px rgba(27, 31, 59, 0.15);
+    }
+ 
+    .navega.mobile{
+        display: flex;
+    }
+ 
+    .navega li{
+        text-align: center;
+        margin: 2px 0px;
+    }
+}
