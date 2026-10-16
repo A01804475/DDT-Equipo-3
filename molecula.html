@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Página Web DDT/css/formato.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c78eede48c.js" crossorigin="anonymous"></script>
+        <title>DDT</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="navega" id="navega">
+                <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="#informacion"><i class="fa-solid fa-flask"></i>Información</a></li>
+                <li><a href="#galeria"><i class="fa-solid fa-images"></i>Galería</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+                <li><a href="#equipo"><i class="fa-solid fa-users"></i>Equipo</a></li>
+            </ul>
+            <div class="menupeque"><a href="javascript:void(0);" onclick="menu()"><i class="fas fa-bars"></i> Menú</a></div>
+        </nav>
+ 
+        <!-- INICIO -->
+        <div class="hero" id="inicio">
+            <div class="circulo c1"></div>
+            <div class="circulo c2"></div>
+            <div class="circulo c3"></div>
+            <div class="hero-contenido">
+                <h1>DDT</h1>
+                <h2>Plaguicidas</h2>
+                <p>Proyecto de Química. Escribe aquí una frase corta que describa tu proyecto.</p>
+                <a href="#informacion" class="boton boton-1">Conoce más</a>
+                <a href="#contacto" class="boton boton-2">Contáctanos</a>
+            </div>
+        </div>
+ 
+        <div class="informacion" id="informacion">
+            <h1 class="titulos">¿De qué trata?</h1>
+            <br>
+            <p class="subtitulo">Dicloro difenil tricloroetano es un compuesto químico sintético utilizado como insecticida en la década de 1940 para evitar la pérdida de los cultivos agrícolas y controlar organismos que transmiten malaria, paludismo y dengue. Sin embargo, el DDT tiene gran persistencia en el ambiente pues es incorporado al agua superficial reciclada de actividades agrícolas, y llega a acumularse incluso en organismos de sitios donde nunca se ha utilizado, además se ha asociado con malformaciones congénitas, abortos, y enfermedades como cáncer de mama, Alzheimer y Parkinson, y disminución de la progesterona en humanos debido a que es un disruptor endócrino (Chávez et al., 2021).</p>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <div class="texto">
+                        <h3>Conoce la molécula</h3>
+                        <br>
+                        <p><b>Nombre común: </b>Dicloro difenil tricloroetano.</p>
+                        <p><b>Nombre IUPAC: </b> 1-cloro-4-[2,2,2-tricloro-1-(4-clorofenil)etil]benceno (Kyriakopoulos & Sebos, 2024).</p>
+                        <p><b>Fórmula molecular: </b>C14H9Cl5 (Kyriakopoulos & Sebos, 2024).</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="molecula">
+                        <iframe src="https://embed.molview.org/v1/?mode=balls&cid=3036"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- TARJETAS -->
+        <div class="tarjetas">
+            <div class="row">
+                <div class="col-4">
+                    <div class="tarjeta">
+                        <div class="icono morado"><i class="fa-solid fa-flask"></i></div>
+                        <h3>¿Qué es?</h3>
+                        <p>Escribe aquí una descripción corta.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tarjeta">
+                        <div class="icono verde"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>Usos</h3>
+                        <p>Escribe aquí una descripción corta.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tarjeta">
+                        <div class="icono rosa"><i class="fa-solid fa-bug"></i></div>
+                        <h3>Impacto</h3>
+                        <p>Escribe aquí una descripción corta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- GALERÍA -->
+        <div class="galeria" id="galeria">
+            <h1 class="titulos">Galería</h1>
+            <p class="subtitulo">Escribe aquí una frase para tu galería.</p>
+            <div class="fila">
+                <div class="columna">
+                    <div class="foto alta morado"><i class="fa-solid fa-flask"></i></div>
+                    <div class="foto baja amarillo"><i class="fa-solid fa-seedling"></i></div>
+                </div>
+                <div class="columna">
+                    <div class="foto baja verde"><i class="fa-solid fa-leaf"></i></div>
+                    <div class="foto alta rosa"><i class="fa-solid fa-bug"></i></div>
+                </div>
+                <div class="columna">
+                    <div class="foto alta amarillo"><i class="fa-solid fa-vial"></i></div>
+                    <div class="foto baja morado"><i class="fa-solid fa-atom"></i></div>
+                </div>
+                <div class="columna">
+                    <div class="foto baja rosa"><i class="fa-solid fa-book"></i></div>
+                    <div class="foto alta verde"><i class="fa-solid fa-earth-americas"></i></div>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- CONTACTO -->
+        <div class="contacto" id="contacto">
+            <h1 class="titulos">Contáctanos</h1>
+            <p class="subtitulo">Déjanos tu mensaje y te respondemos.</p>
+            <div class="row">
+                <div class="col-6">
+                    <div class="formulario">
+                        <h3>Escríbenos</h3>
+                        <form action="">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="redes">
+                        <h3>Síguenos en nuestras redes sociales</h3>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- EQUIPO / PIE DE PÁGINA -->
+        <footer id="equipo">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Proyecto de Química</h2>
+                     <ul>
+                        <li>    Instituto Tecnológico y de Estudios Superiores de Monterrey</li>
+                        <li>Grupo: 402</li>
+                        <li>Profesora: Dra. Vianney González López </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h2>Equipo</h2>
+                    <ul>
+                        <li>Adriana Hernández Gutiérrez</li>
+                        <li>Indra Fernanda Peza Rodríguez</li>
+                        <li>Paola Ruiz Navarrete</li>
+                        <li>Yamilet Rivera Ortiz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p><i class="fa-regular fa-copyright"></i> DDT - Proyecto de Química</p>
+                </div>
+            </div>
+        </footer>
+ 
+        <script src="../ATHLETIKUM/js/Script.js"></script>
+        <script>
+            if (typeof menu !== "function") {
+                function menu() {
+                    document.getElementById("navega").classList.toggle("mobile");
+                }
+            }
+        </script>
+    </body>
+</html>
