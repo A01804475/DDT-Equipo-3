@@ -259,6 +259,11 @@ nav i{
     border: none;
     border-radius: 18px;
 }
+
+.molecula a:hover{
+    color: #FFC93C;
+    transform: translateY(-6px);
+}
  
 /* ---------- Tarjetas ---------- */
 .tarjetas{
