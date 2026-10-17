@@ -227,6 +227,7 @@ nav i{
     padding: 90px 50px 50px;
     text-align: center;
 }
+
  
 .texto{
     text-align: left;
@@ -244,7 +245,7 @@ nav i{
     color: #3d4263;
     margin-bottom: 15px;
 }
- 
+
 .molecula{
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
@@ -302,7 +303,25 @@ nav i{
 .tarjeta p{
     color: #5b6080;
 }
- 
+/* ---------- Molécula ---------- */
+
+.mol{
+    background-color: #1B1F3B;
+    padding: 12px;
+    text-align: center;
+    border-radius: 80px;
+}
+
+.mol p{
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+
 /* ---------- Galería ---------- */
 .galeria{
     background-color: #1B1F3B;
@@ -318,6 +337,7 @@ nav i{
 .galeria .subtitulo{
     color: #c9ccf0;
 }
+
  
 .fila{
     display: flex;
@@ -550,7 +570,7 @@ footer p{
         font-size: 2em;
     }
  
-    .informacion, .tarjetas, .galeria, .contacto{
+    .informacion, .tarjetas, .mol , .galeria, .contacto{
         padding-left: 20px;
         padding-right: 20px;
     }
