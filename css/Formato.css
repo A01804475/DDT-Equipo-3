@@ -82,7 +82,7 @@ nav a{
 }
  
 nav a:hover{
-    background-color: #6C4DFF;
+    background-color: #ffa94d;
     color: white;
 }
  
@@ -106,7 +106,7 @@ nav i{
     text-align: center;
     padding: 160px 20px 120px;
     color: white;
-    background: linear-gradient(135deg, #6C4DFF 0%, #8E5BFF 45%, #00BFA6 100%);
+    background: linear-gradient(135deg, #ffa94d 0%, #8E5BFF 45%, #00BFA6 100%);
     border-radius: 0px 0px 80px 80px;
 }
  
