@@ -256,7 +256,7 @@ nav i{
  
 .molecula iframe{
     width: 100%;
-    height: 480px;
+    height: 650px;
     border: none;
     border-radius: 18px;
 }
@@ -309,6 +309,22 @@ nav i{
 .tarjeta p{
     color: #5b6080;
 }
+
+.dato{
+    background-color: #2b3261b3;
+    border-left: 8px solid #FFC93C;
+    border-radius: 15px;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+}
+ 
+.dato span{
+    display: block;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #eaecff;
+}
+
 /* ---------- Molécula ---------- */
 
 .mol{
@@ -319,8 +335,8 @@ nav i{
 }
 
 .mol p{
-    font-size: 1.1em;
-    color: white;
+    font-size: 0.9em;
+    color: #eaecff;
     margin-bottom: 20px;
     text-align: left;
 }
