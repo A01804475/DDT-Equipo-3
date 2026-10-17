@@ -82,7 +82,7 @@ nav a{
 }
  
 nav a:hover{
-    background-color: #ffa94d;
+    background-color: #6e4dff;
     color: white;
 }
  
@@ -106,7 +106,7 @@ nav i{
     text-align: center;
     padding: 160px 20px 120px;
     color: white;
-    background: linear-gradient(135deg, #ffa94d 0%, #8E5BFF 45%, #00BFA6 100%);
+    background: linear-gradient(135deg, #7f4dff 0%, #8E5BFF 45%, #00BFA6 100%);
     border-radius: 0px 0px 80px 80px;
 }
  
@@ -146,7 +146,7 @@ nav i{
 .c1{
     width: 350px;
     height: 350px;
-    background-color: #FFC93C;
+    background-color: #FFC93C;;
     top: -100px;
     right: -80px;
 }
@@ -181,7 +181,7 @@ nav i{
 }
  
 .boton-1{
-    background-color: #FFC93C;
+    background-color: #FFC93C;;
     color: #1B1F3B;
     box-shadow: 0px 6px 0px #1B1F3B;
 }
