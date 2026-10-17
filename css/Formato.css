@@ -745,7 +745,7 @@ nav i{
 
 .descripcion-etapa small {
     display: block;
-    margin-top: 8px;
+    margin-top: -10px;
 }
 /* MARCOS DE IMÁGENES HORIZONTALES */
 .marco-foto,
